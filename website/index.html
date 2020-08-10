@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ACE ENGINEERING COLLEGE</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div pull right> Ace </div>
+    <div class ="navigation">
+      <ul>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa fa-university" aria-hidden="true"></i></span>
+            <span class="title">About Ace</span>
+          </a>  
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa fa-database" aria-hidden="true"></i></span>
+            <span class="title">Departments</span>
+          </a>  
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+            <span class="title">Administration</span>
+          </a>
+
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa fa-address-card-o" aria-hidden="true"></i></span>
+            <span class="title">Admissions</span>
+          </a>  
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa fa-id-card-o" aria-hidden="true"></i></span>
+            <span class="title">Student Zone</span>
+          </a>  
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa fa-suitcase" aria-hidden="true"></i></span>
+            <span class="title">Placements</span>
+          </a>  
+        </li>
+      </ul>  
+    </div>    
+    <div class="toggle" onclick="toggleMenu()"></div>
+    <script type="text/javascript">
+      function toggleMenu(){
+        let navigation = document.querySelector('.navigation');
+        let toggle = document.querySelector('.toggle');
+        navigation.classList.toggle('active');
+        toggle.classList.toggle('active');
+      }
+    </script>
+
+    
+  </body>  
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

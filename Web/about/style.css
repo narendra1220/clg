@@ -93,11 +93,68 @@ div span
   margin-right: auto;
   width: 100%;
 }
-.footer 
+div.row
 {
-  background-color: lightgrey;
-  margin: 0px auto;
-  padding: 20px 0px; 
+  width: 90;
+  height: 60px;
+  box-sizing : border-box;
+  background: #4169E1;
+  color: white;
+  size: 60px;
+  text-align: center;
+}
+div.row span
+{
+  font-size: 35px;
+  font-family: 'Cantarell', sans-serif;
+  color: white
+}
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+div.text span
+{
+  font-size: 30px;
+  text-align: center;
+  color:  #069370;
+  font-weight: 600;
+  font-family: 'Source Serif Pro', serif;
+}
+p
+{
+  font-size: 22px;
+  text-align: left;
 }
 @media (max-width: 1200px)
 {
@@ -184,6 +241,35 @@ div span
     color: black;
     font: bold;
   }
+  div.row span
+  {
+  font-size: 20px;
+  font-family: 'Cantarell', sans-serif;
+  color: white
+  }
+  div.row
+  {
+  width: 90;
+  height: 30px;
+  box-sizing : border-box;
+  background: #4169E1;
+  color: white;
+  size: 60px;
+  text-align: center;
+  }
+  div.text span
+  {
+  font-size: 18px;
+  text-align: center;
+  color:  #069370;
+  font-weight: 600;
+  font-family: 'Source Serif Pro', serif; 
+  }
+  p
+  {
+  font-size: 15px;
+  text-align: left;
+  } 
 } 
 
 
