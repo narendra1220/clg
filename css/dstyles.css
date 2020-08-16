@@ -93,6 +93,63 @@ div span
   margin-right: auto;
   width: 100%;
 }
+.footer 
+{
+  background-color: lightgrey;
+  margin: 0px auto;
+  padding: 20px 0px; 
+}
+.container
+{
+  margin-top: 12%;
+}
+.single-content{
+  position: relative;
+  transition: .3s;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0);
+  padding-top : 20px;
+}
+.single-content .text-content,
+.single-content:after{
+  position: absolute;
+  left: 20px;
+  right: 20px;
+}
+.single-content:after{
+  content: '';
+  display: block;
+  background: lightgrey;
+  top: 20px;
+  bottom: 20px;
+  opacity: 0;
+  transform: rotate3d(-1,1,0,100deg);
+  transition: .4s;
+}
+.single-content:hover:after{
+  opacity: .9;
+  transform: rotate3d(0,0,0,0deg);
+}
+.single-content img{
+  width: 100%;
+  height: auto;
+}
+.text-content{
+  top: 45%;
+  opacity: 0;
+  z-index: 1;
+  transform: translate(10%,-30%);
+  transition: .3s;
+  text-align: center;
+  color: #fff;
+}
+.text-content h4{
+  font-family: big john;
+}
+.single-content:hover .text-content{
+  opacity: 1;
+  transform: translate(0,-50%);
+  transition-delay: .3s;
+}
 div.r
 {
   width: 90;
@@ -102,59 +159,48 @@ div.r
   color: white;
   size: 60px;
   text-align: center;
+  
 }
+
 div.r span
 {
   font-size: 35px;
   font-family: 'Cantarell', sans-serif;
   color: white
 }
-.content-table {
-  border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 0.9em;
-  min-width: 400px;
-  border-radius: 5px 5px 0 0;
+.tab {
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
 }
 
-.content-table thead tr {
-  background-color: #009879;
-  color: #ffffff;
-  text-align: left;
-  font-weight: bold;
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
 }
 
-.content-table th,
-.content-table td {
-  padding: 12px 15px;
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
 }
 
-.content-table tbody tr {
-  border-bottom: 1px solid #dddddd;
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
 }
 
-.content-table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-}
-
-.content-table tbody tr:last-of-type {
-  border-bottom: 2px solid #009879;
-}
-
-div.text span
-{
-  font-size: 30px;
-  text-align: center;
-  color:  #069370;
-  font-weight: 600;
-  font-family: 'Source Serif Pro', serif;
-}
-div.text span p
-{
-  font-size: 22px;
-  text-align: left;
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
 }
 @media (max-width: 1200px)
 {
@@ -248,7 +294,7 @@ div.text span p
   color: white
   }
   div.r
-  {
+  { 
   width: 90;
   height: 30px;
   box-sizing : border-box;
@@ -257,19 +303,6 @@ div.text span p
   size: 60px;
   text-align: center;
   }
-  div.text span
-  {
-  font-size: 18px;
-  text-align: center;
-  color:  #069370;
-  font-weight: 600;
-  font-family: 'Source Serif Pro', serif; 
-  }
-  p
-  {
-  font-size: 15px;
-  text-align: left;
-  } 
 } 
 
 
