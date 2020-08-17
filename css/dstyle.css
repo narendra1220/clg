@@ -99,6 +99,64 @@ div span
   margin: 0px auto;
   padding: 20px 0px; 
 }
+.container
+{
+  margin-top: 12%;
+}
+
+div.r
+{
+  width: 90;
+  height: 60px;
+  box-sizing : border-box;
+  background: #4169E1;
+  color: white;
+  size: 60px;
+  text-align: center;
+  
+}
+
+div.r span
+{
+  font-size: 35px;
+  font-family: 'Cantarell', sans-serif;
+  color: white
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #fff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #fff;
+  border-top: none;
+}
+
 @media (max-width: 1200px)
 {
   header
@@ -183,6 +241,22 @@ div span
     font-size: 15px;
     color: black;
     font: bold;
+  }
+  div.r span
+  {
+  font-size: 20px;
+  font-family: 'Cantarell', sans-serif;
+  color: white
+  }
+  div.r
+  { 
+  width: 90;
+  height: 30px;
+  box-sizing : border-box;
+  background: #4169E1;
+  color: white;
+  size: 60px;
+  text-align: center;
   }
 } 
 
